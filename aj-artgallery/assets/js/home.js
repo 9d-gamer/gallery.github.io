@@ -1,6 +1,7 @@
 function HandlePage() {
   HandleSliders();
   HandleSpotLight();
+  HandleFilters();
   handleDarkMode();
   setTimeout(() => {
     $('.loading-container').hide();
@@ -84,4 +85,114 @@ function HandleSpotLight(){
   console.log(html)
   const spotlightContainer = document.getElementById('Home-Spotlight');
   spotlightContainer.innerHTML = html;
+}
+
+function HandleFilters(){
+  const filters = Data.filters;
+  const verity  = filters.verity;
+  const types   = filters.types;
+  const color  = filters.color;
+  const data = { verity:[], types:[], color:[] };
+  for (i=0; i < verity.length; i++) {
+    const e = verity[i];
+    const card = `<a
+                    href="/painting.html?param1=${e.id}&param2=all&param3=all"
+                    class="remove-anchor-decoration text-dark"
+                  >
+                    <div class="col">
+                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+                        <img
+                          src="${e.image}"
+                          class="card-img-top image-fluid"
+                          alt="${e.image_alt}"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-dark">${e.label}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </a>`
+    data.verity.push(card);
+  }
+  for (i=0; i < types.length; i++) {
+    const e = types[i];
+    const card = `<a
+                    href="/painting.html?param1=all&param2=${e.id}&param3=all"
+                    class="remove-anchor-decoration text-dark"
+                  >
+                    <div class="col">
+                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+                        <img
+                          src="${e.image}"
+                          class="card-img-top image-fluid"
+                          alt="${e.image_alt}"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-dark">${e.label}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </a>`
+    data.types.push(card);
+  }
+  for (i=0; i < color.length; i++) {
+    const e = color[i];
+    const card = `<a
+                    href="/painting.html?param1=all&param2=all&param3=${e.id}"
+                    class="remove-anchor-decoration text-dark"
+                  >
+                    <div class="col">
+                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+                        <img
+                          src="${e.image}"
+                          class="card-img-top image-fluid"
+                          alt="${e.image_alt}"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-dark">${e.label}</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </a>`
+    data.color.push(card);
+  }
+  const html = `
+  <div class="container">
+      <p class="text-center fs-1 card shadow p-3 text-dark bg-light">
+        We have these verities in paintings
+      </p>
+      <a href="/painting.html" class="remove-anchor-decoration">
+        <p class="text-end fs-5 text-primary">See More Paintings>>></p>
+      </a>
+      <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
+      ${data.verity.join('')}
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="container">
+      <p class="text-center fs-1 card shadow p-3 text-dark bg-light">
+        We have these types in paintings
+      </p>
+      <a href="/painting.html" class="remove-anchor-decoration">
+        <p class="text-end fs-5 text-primary">See More Paintings>>></p>
+      </a>
+      <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
+      ${data.types.join('')}
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="container">
+      <p class="text-center fs-1 card shadow p-3 text-dark bg-light">
+        We have these colors in paintings
+      </p>
+      <a href="/painting.html" class="remove-anchor-decoration">
+        <p class="text-end fs-5 text-primary">See More Paintings>>></p>
+      </a>
+      <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
+      ${data.color.join('')}
+      </div>
+    </div>`
+  console.log(html)
+  const filtersContainer = document.getElementById('Home-Filters');
+  filtersContainer.innerHTML = html;
 }

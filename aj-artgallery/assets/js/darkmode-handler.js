@@ -6,7 +6,7 @@ const ClassesLight_to_Dark = { // convert light to dark
     'addHover-light':'addHover-dark',
     'text-primary':'text-white',
     'divider-dark':'divider-light',
-    'border-dark':'border-lgiht',
+    'border-light':'border-dark',
 };
 
 const ClassesDark_to_Light = { // convert dark to light
@@ -17,7 +17,7 @@ const ClassesDark_to_Light = { // convert dark to light
     'addHover-dark':'addHover-light',
     'text-white':'text-primary',
     'divider-light':'divider-dark',
-    'border-light':'border-dark',
+    'border-dark':'border-light',
 };
 
 function toggleClasses(mode) {

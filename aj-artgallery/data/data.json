@@ -54,23 +54,26 @@
     "filters":{
         "verity":[
             {
-                "id":"",
-                "image":"",
-                "label":""
+                "id":"abstract",
+                "image":"/assets/images/pages/home/categories/paint1.jpg",
+                "image_alt":"categories/paint1",
+                "label":"Abstract Paintings"
             }
         ],
         "types":[
             {
-                "id":"",
-                "image":"",
-                "label":""
+                "id":"acrylic",
+                "image":"/assets/images/pages/home/categories/paint7.jpg",
+                "image_alt":"categories/paint7",
+                "label":"Acrylic Paintings"
             }
         ],
         "color":[
             {
-                "id":"",
-                "image":"",
-                "label":""
+                "id":"acrylc-color",
+                "image":"/assets/images/pages/home/categories/paint12.jpg",
+                "image_alt":"categories/paint12",
+                "label":"Acrylic Color"
             }
         ]
     }
