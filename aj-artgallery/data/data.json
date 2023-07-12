@@ -1,0 +1,77 @@
+{
+    "Home_Page": {
+        "Sliders": [
+            { 
+                "Image": "/assets/images/pages/home/carousel-1.jpg",
+                "Image_alt":"carousel-1",
+                "Title": "Nature art",
+                "Description":"This art is created with Acrylic colors and have a nice night view with couples walking"
+            },
+            { 
+                "Image": "/assets/images/pages/home/carousel-2.jpg",
+                "Image_alt":"carousel-2",
+                "Title": "Flower art",
+                "Description":"This art is created with oil paints and shows nice close view of flowers and rain drops"
+            },
+            { 
+                "Image": "/assets/images/pages/home/carousel-3.jpg",
+                "Image_alt":"carousel-3",
+                "Title": "Landscape art",
+                "Description":"no one can't just believe that this art is purely made by charcoal"
+            }
+        ]
+    },
+    "Paintings": [
+        {
+            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
+            "Image_alt":"Painting",
+            "Title":"Abstract Painting",
+            "description":"Created by Roger Park",
+            "filter":{
+                "verity":"",
+                "Type":"",
+                "Color":""
+            },
+            "id":"something",
+            "price":"$330-$450",
+            "spotlight":true
+        },
+        {
+            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
+            "Image_alt":"Painting",
+            "Title":"Abstract Painting",
+            "description":"Created by Roger Park",
+            "filter":{
+                "verity":"",
+                "Type":"",
+                "Color":""
+            },
+            "id":"something",
+            "price":"$330-$450",
+            "spotlight":false
+        }
+    ],
+    "filters":{
+        "verity":[
+            {
+                "id":"",
+                "image":"",
+                "label":""
+            }
+        ],
+        "types":[
+            {
+                "id":"",
+                "image":"",
+                "label":""
+            }
+        ],
+        "color":[
+            {
+                "id":"",
+                "image":"",
+                "label":""
+            }
+        ]
+    }
+}
