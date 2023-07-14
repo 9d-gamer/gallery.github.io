@@ -17,7 +17,7 @@
 }
 
 .addHover-dark:hover {
-    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.306) !important;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.10) !important;
 }
 
 .addHover-Navbar-light:hover {
@@ -34,6 +34,14 @@
 
 .divider-dark {
     background-color: black !important;
+}
+
+.shadow-light {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.shadow-dark {
+    box-shadow: 0 .5rem 1rem rgba(250,250,250,.10)!important;
 }
 
 .loading-container {

@@ -19,6 +19,16 @@
                 "Title": "Landscape art",
                 "Description":"no one can't just believe that this art is purely made by charcoal"
             }
+        ],
+        "FAQ" : [
+            {
+                "Question":"What are the 5 elements of painting?",
+                "Answer":"The goal of this unit is to introduce students to the basic elements of art (color, line, shape, form, and texture) and to show students how artists use these elements in different ways in their work."
+            },
+            {
+                "Question":"What are the 5 elements of painting?",
+                "Answer":"The goal of this unit is to introduce students to the basic elements of art (color, line, shape, form, and texture) and to show students how artists use these elements in different ways in their work."
+            }
         ]
     },
     "Paintings": [

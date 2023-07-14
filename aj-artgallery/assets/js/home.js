@@ -2,6 +2,7 @@ function HandlePage() {
   HandleSliders();
   HandleSpotLight();
   HandleFilters();
+  HandleFAQ();
   handleDarkMode();
   setTimeout(() => {
     $('.loading-container').hide();
@@ -158,7 +159,7 @@ function HandleFilters(){
   }
   const html = `
   <div class="container">
-      <p class="text-center fs-1 card shadow p-3 text-dark bg-light">
+      <p class="text-center fs-1 card shadow-light p-3 text-dark bg-light">
         We have these verities in paintings
       </p>
       <a href="/painting.html" class="remove-anchor-decoration">
@@ -168,9 +169,9 @@ function HandleFilters(){
       ${data.verity.join('')}
       </div>
     </div>
-    <hr class="divider" />
+    <hr class="divider divider-dark"/>
     <div class="container">
-      <p class="text-center fs-1 card shadow p-3 text-dark bg-light">
+      <p class="text-center fs-1 card shadow-light p-3 text-dark bg-light">
         We have these types in paintings
       </p>
       <a href="/painting.html" class="remove-anchor-decoration">
@@ -180,9 +181,9 @@ function HandleFilters(){
       ${data.types.join('')}
       </div>
     </div>
-    <hr class="divider" />
+    <hr class="divider divider-dark"/>
     <div class="container">
-      <p class="text-center fs-1 card shadow p-3 text-dark bg-light">
+      <p class="text-center fs-1 card shadow-light p-3 text-dark bg-light">
         We have these colors in paintings
       </p>
       <a href="/painting.html" class="remove-anchor-decoration">
@@ -195,4 +196,58 @@ function HandleFilters(){
   console.log(html)
   const filtersContainer = document.getElementById('Home-Filters');
   filtersContainer.innerHTML = html;
+}
+
+function HandleFAQ(){
+  const FAQ = Data.Home_Page.FAQ;
+  const faq = []
+  for (i=0; i < FAQ.length; i++) {
+    const e = FAQ[i]
+    const data = `
+    <div class="accordion-item bg-light">
+      <h2 class="accordion-header bg-light" id="flush-headingOne">
+        <button
+          class="accordion-button collapsed bg-light text-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse${i}"
+          aria-expanded="false"
+          aria-controls="flush-collapse${i}"
+        >
+          ${e.Question}
+        </button>
+      </h2>
+      <div
+        id="flush-collapse${i}"
+        class="accordion-collapse collapse"
+        aria-labelledby="flush-heading${i}"
+        data-bs-parent="#accordionFlushExample"
+      >
+        <div class="accordion-body shadow-light bg-light text-dark">
+        ${e.Answer}
+        </div>
+      </div>
+    </div>`
+    faq.push(data);
+  }
+  const html = `
+  <div class="container card shadow-light p-3 bg-light">
+      <div
+        class="row row-cols-w row-cols-md-2 m-4 justify-content-center"
+        id="cards"
+      >
+        <div class="col">
+          <div class="m-5"></div>
+          <p class="fs-2 text-center m-5 text-dark">Frequently Asked Questions</p>
+        </div>
+        <div class="col">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+          ${faq.join('')}
+          </div>
+        </div>
+      </div>
+    </div>`
+  console.log(html)
+  const faqContainer = document.getElementById('Home-Questions');
+  faqContainer.innerHTML = html;
 }
