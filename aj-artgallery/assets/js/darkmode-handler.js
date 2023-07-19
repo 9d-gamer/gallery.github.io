@@ -7,7 +7,10 @@ const ClassesLight_to_Dark = { // convert light to dark
     'text-primary':'text-white',
     'divider-dark':'divider-light',
     'border-light':'border-dark',
+    'border-light2':'border-dark2',
     'shadow-light':'shadow-dark',
+    "card-footer-light":"card-footer-dark",
+    "btn-light":"btn-dark",
 };
 
 const ClassesDark_to_Light = { // convert dark to light
@@ -19,7 +22,10 @@ const ClassesDark_to_Light = { // convert dark to light
     'text-white':'text-primary',
     'divider-light':'divider-dark',
     'border-dark':'border-light',
+    'border-dark2':'border-light2',
     'shadow-dark':'shadow-light',
+    "card-footer-dark":"card-footer-light",
+    "btn-dark":"btn-light",
 };
 
 function toggleClasses(mode) {

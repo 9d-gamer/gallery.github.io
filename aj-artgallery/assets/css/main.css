@@ -44,8 +44,44 @@
     box-shadow: 0 .5rem 1rem rgba(250,250,250,.10)!important;
 }
 
+.card-footer-light {
+    padding: 0.5rem 1rem;
+    background-color: rgba(0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.card-footer-light:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.card-footer-dark {
+    padding: 0.5rem 1rem;
+    background-color: rgba(255,255,255,.03);
+    border-top: 1px solid rgba(255,255,255,.125);
+}
+
+.card-footer-dark:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.border-light2 {
+    border-color: rgba(0,0,0,.125)!important;
+}
+
+.border-dark2 {
+    border-color: rgba(255,255,255,.225)!important;
+}
+
+
 .loading-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loading-container2 {
+    display: none;
     align-items: center;
     justify-content: center;
     height: 100vh;

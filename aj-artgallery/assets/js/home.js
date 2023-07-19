@@ -50,12 +50,11 @@ function HandleSliders() {
 function HandleSpotLight(){
   const Paintings = Data.Paintings;
   const spotlighs = [];
-  console.log(Data)
   for (i=0; i < Paintings.length; i++){
     const e = Paintings[i];
     if (e.spotlight) {
       const card = `<div class="col">
-      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
         <img
           src="${e.image}"
           class="card-img-top image-fluid"
@@ -83,7 +82,6 @@ function HandleSpotLight(){
     ${spotlighs.join('')}
     </div>
   </div>`
-  console.log(html)
   const spotlightContainer = document.getElementById('Home-Spotlight');
   spotlightContainer.innerHTML = html;
 }
@@ -97,11 +95,11 @@ function HandleFilters(){
   for (i=0; i < verity.length; i++) {
     const e = verity[i];
     const card = `<a
-                    href="/painting.html?param1=${e.id}&param2=all&param3=all"
+                    href="/painting.html?param1=${e.id}&param2=all&param3=all&label1=${e.aria_label}&label2=All&label3=All"
                     class="remove-anchor-decoration text-dark"
                   >
                     <div class="col">
-                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
                         <img
                           src="${e.image}"
                           class="card-img-top image-fluid"
@@ -118,11 +116,11 @@ function HandleFilters(){
   for (i=0; i < types.length; i++) {
     const e = types[i];
     const card = `<a
-                    href="/painting.html?param1=all&param2=${e.id}&param3=all"
+                    href="/painting.html?param1=all&param2=${e.id}&param3=all&label1=All&label2=${e.aria_label}&label3=All"
                     class="remove-anchor-decoration text-dark"
                   >
                     <div class="col">
-                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
                         <img
                           src="${e.image}"
                           class="card-img-top image-fluid"
@@ -139,11 +137,11 @@ function HandleFilters(){
   for (i=0; i < color.length; i++) {
     const e = color[i];
     const card = `<a
-                    href="/painting.html?param1=all&param2=all&param3=${e.id}"
+                    href="/painting.html?param1=all&param2=all&param3=${e.id}&label1=All&label2=All&label3=${e.aria_label}"
                     class="remove-anchor-decoration text-dark"
                   >
                     <div class="col">
-                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark">
+                      <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
                         <img
                           src="${e.image}"
                           class="card-img-top image-fluid"
@@ -193,7 +191,6 @@ function HandleFilters(){
       ${data.color.join('')}
       </div>
     </div>`
-  console.log(html)
   const filtersContainer = document.getElementById('Home-Filters');
   filtersContainer.innerHTML = html;
 }
@@ -247,7 +244,6 @@ function HandleFAQ(){
         </div>
       </div>
     </div>`
-  console.log(html)
   const faqContainer = document.getElementById('Home-Questions');
   faqContainer.innerHTML = html;
 }

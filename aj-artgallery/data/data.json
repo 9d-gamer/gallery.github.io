@@ -26,8 +26,12 @@
                 "Answer":"The goal of this unit is to introduce students to the basic elements of art (color, line, shape, form, and texture) and to show students how artists use these elements in different ways in their work."
             },
             {
-                "Question":"What are the 5 elements of painting?",
-                "Answer":"The goal of this unit is to introduce students to the basic elements of art (color, line, shape, form, and texture) and to show students how artists use these elements in different ways in their work."
+                "Question":"What is the most important part of painting?",
+                "Answer":"Color (or hue) is at the heart of every painting. It is arguably the most important element because it sets the tone for how viewers feel about the work. It can, for instance, be warm and inviting or cold and stark. Either way, color can set the mood for a piece."
+            },
+            {
+                "Question":"What are the characteristics of painting?",
+                "Answer":"painting, the expression of ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language. The elements of this language—its shapes, lines, colours, tones, and textures—are used in various waysn to produce sensations of volume, space, movement, and light on a flat surface."
             }
         ]
     },
@@ -38,11 +42,14 @@
             "Title":"Abstract Painting",
             "description":"Created by Roger Park",
             "filter":{
-                "verity":"",
-                "Type":"",
-                "Color":""
+                "verity":"abstract",
+                "verity_label":"Abstract",
+                "Type":"fabric",
+                "Type_label":"Fabric",
+                "Color":"oil-color",
+                "Color_label":"Oil"
             },
-            "id":"something",
+            "detail":"Hello,<br>This is a multiline<br>JSON string.",
             "price":"$330-$450",
             "spotlight":true
         },
@@ -52,13 +59,50 @@
             "Title":"Abstract Painting",
             "description":"Created by Roger Park",
             "filter":{
-                "verity":"",
-                "Type":"",
-                "Color":""
+                "verity":"abstract",
+                "verity_label":"Abstract",
+                "Type":"ohp",
+                "Type_label":"OHP",
+                "Color":"oil-color",
+                "Color_label":"Oil"
             },
-            "id":"something",
+            "detail":"Hello,<br>This is a multiline<br>JSON string.",
             "price":"$330-$450",
-            "spotlight":false
+            "spotlight":true
+        },
+        {
+            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
+            "Image_alt":"Painting",
+            "Title":"Abstract Painting",
+            "description":"Created by Roger Park",
+            "filter":{
+                "verity":"abstract",
+                "verity_label":"Abstract",
+                "Type":"fabric",
+                "Type_label":"Fabric",
+                "Color":"water-color",
+                "Color_label":"Water"
+            },
+            "detail":"Hello,<br>This is a multiline<br>JSON string.",
+            "price":"$330-$450",
+            "spotlight":true
+        },
+        {
+            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
+            "Image_alt":"Painting",
+            "Title":"Abstract Painting",
+            "description":"Created by Roger Park",
+            "filter":{
+                "verity":"figurative",
+                "verity_label":"Figurative",
+                "Type":"fabric",
+                "Type_label":"Fabric",
+                "Color":"water-color",
+                "Color_label":"Water"
+            },
+            "detail":"Hello,<br>This is a multiline<br>JSON string.",
+            "price":"$330-$450",
+            "spotlight":true
         }
     ],
     "filters":{
@@ -67,7 +111,43 @@
                 "id":"abstract",
                 "image":"/assets/images/pages/home/categories/paint1.jpg",
                 "image_alt":"categories/paint1",
+                "aria_label": "Abstract",
                 "label":"Abstract Paintings"
+            },
+            {
+                "id":"abstract",
+                "image":"/assets/images/pages/home/categories/paint2.jpg",
+                "image_alt":"categories/paint2",
+                "aria_label": "Landscape",
+                "label":"Landscape Paintings"
+            },
+            {
+                "id":"flower",
+                "image":"/assets/images/pages/home/categories/paint3.jpg",
+                "image_alt":"categories/paint3",
+                "aria_label": "Flower",
+                "label":"Flower Paintings"
+            },
+            {
+                "id":"nature",
+                "image":"/assets/images/pages/home/categories/paint4.jpg",
+                "image_alt":"categories/paint4",
+                "aria_label": "Nature",
+                "label":"Nature Paintings"
+            },
+            {
+                "id":"figurative",
+                "image":"/assets/images/pages/home/categories/paint5.jpg",
+                "image_alt":"categories/paint5",
+                "aria_label": "Figurative",
+                "label":"Figurative Paintings"
+            },
+            {
+                "id":"religious",
+                "image":"/assets/images/pages/home/categories/paint6.jpg",
+                "image_alt":"categories/paint6",
+                "aria_label": "Religious",
+                "label":"Religious Paintings"
             }
         ],
         "types":[
@@ -75,7 +155,36 @@
                 "id":"acrylic",
                 "image":"/assets/images/pages/home/categories/paint7.jpg",
                 "image_alt":"categories/paint7",
+                "aria_label": "Acrylic",
                 "label":"Acrylic Paintings"
+            },
+            {
+                "id":"canvas",
+                "image":"/assets/images/pages/home/categories/paint8.jpg",
+                "image_alt":"categories/paint8",
+                "aria_label": "Canvas",
+                "label":"Canvas Paintings"
+            },
+            {
+                "id":"paper",
+                "image":"/assets/images/pages/home/categories/paint9.jpg",
+                "image_alt":"categories/paint9",
+                "aria_label": "Paper",
+                "label":"Paper Paintings"
+            },
+            {
+                "id":"ohp",
+                "image":"/assets/images/pages/home/categories/paint10.jpg",
+                "image_alt":"categories/paint10",
+                "aria_label": "OHP sheet",
+                "label":"OHP sheet Paintings"
+            },
+            {
+                "id":"fabric",
+                "image":"/assets/images/pages/home/categories/paint11.jpg",
+                "image_alt":"categories/paint11",
+                "aria_label": "Fabric",
+                "label":"Fabric Paintings"
             }
         ],
         "color":[
@@ -83,7 +192,57 @@
                 "id":"acrylc-color",
                 "image":"/assets/images/pages/home/categories/paint12.jpg",
                 "image_alt":"categories/paint12",
+                "aria_label": "Acrylic",
                 "label":"Acrylic Color"
+            },
+            {
+                "id":"point-color",
+                "image":"/assets/images/pages/home/categories/paint13.jpg",
+                "image_alt":"categories/paint13",
+                "aria_label": "Ball Point",
+                "label":"Ball Point Pen Color"
+            },
+            {
+                "id":"charcoal-color",
+                "image":"/assets/images/pages/home/categories/paint14.jpg",
+                "image_alt":"categories/paint14",
+                "aria_label": "Charcoal",
+                "label":"Charcoal Color"
+            },
+            {
+                "id":"oil-color",
+                "image":"/assets/images/pages/home/categories/paint15.jpg",
+                "image_alt":"categories/paint15",
+                "aria_label": "Oil",
+                "label":"Oil Color"
+            },
+            {
+                "id":"water-color",
+                "image":"/assets/images/pages/home/categories/paint16.jpg",
+                "image_alt":"categories/paint16",
+                "aria_label": "Water",
+                "label":"Water Color"
+            },
+            {
+                "id":"poster-color",
+                "image":"/assets/images/pages/home/categories/paint17.jpg",
+                "image_alt":"categories/paint17",
+                "aria_label": "Poster",
+                "label":"Poster Color"
+            },
+            {
+                "id":"enamel-color",
+                "image":"/assets/images/pages/home/categories/paint18.jpg",
+                "image_alt":"categories/paint18",
+                "aria_label": "Enamel",
+                "label":"Enamel Color"
+            },
+            {
+                "id":"ink-color",
+                "image":"/assets/images/pages/home/categories/paint19.jpg",
+                "image_alt":"categories/paint19",
+                "aria_label": "Ink",
+                "label":"Ink Color"
             }
         ]
     }
