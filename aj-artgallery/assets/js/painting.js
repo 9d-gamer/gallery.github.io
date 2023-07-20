@@ -1,9 +1,11 @@
 let verity = 'all'
 let types = 'all'
 let color = 'all'
+let creator = 'all'
 let previousScrollPosition = 0;
 
 function HandlePage(){
+    $('.goback').hide();
     const url = window.location.search
     const parameter1 = getParameterByName("param1", url)
     const parameter2 = getParameterByName("param2", url)
@@ -19,7 +21,7 @@ function HandlePage(){
     const color_label = parameter6? parameter6 : 'All'
     HandleFilters(verity_label, types_label, color_label);
     HandleFiltersButtons()
-    HandlePaintings(verity,types,color)
+    HandlePaintings(verity,types,color,creator)
     handleDarkMode();
     setTimeout(() => {
         $('.loading-container').hide();
@@ -33,7 +35,8 @@ function HandleFilters(a,b,c){
     const verity = filters.verity
     const types  = filters.types
     const color  = filters.color
-    const data = { verity:[], types:[], color:[] };
+    const artist = filters.artists
+    const data = { verity:[], types:[], color:[], artist:[] };
 
     for (let i = 0; i < verity.length; i++){
         const e = verity[i]
@@ -75,6 +78,20 @@ function HandleFilters(a,b,c){
     data.color.push(`
     <li>
         <a class="dropdown-item filter-button3 text-dark" data-filter="all" aria-label="All">All</a>
+    </li>
+    `);
+    for (let i = 0; i < artist.length; i++){
+        const e = artist[i]
+        const list = `
+        <li>
+            <a class="dropdown-item filter-button4 text-dark" data-filter="${e.id}" aria-label="${e.aria_label}">${e.aria_label}</a>
+        </li>
+        `
+        data.artist.push(list);
+    }
+    data.artist.push(`
+    <li>
+        <a class="dropdown-item filter-button4 text-dark" data-filter="all" aria-label="All">All</a>
     </li>
     `);
 
@@ -135,6 +152,24 @@ function HandleFilters(a,b,c){
           </div>
         </div>
       </div>
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <p class="text-center fs-5 text-dark">Select Artist</p>
+          </div>
+          <div class="col">
+            <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton4"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                All
+            </button>
+              <ul class="dropdown-menu bg-light shadow-light mt-4" aria-labelledby="dropdownMenuButton4" id="dropdown-menu-3">
+              ${data.artist.join('')}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
     `
@@ -146,31 +181,37 @@ function HandleFiltersButtons(){
     $(".filter-button1").click(function(){
         verity = $(this).attr('data-filter');
         document.getElementById("dropdownMenuButton1").innerHTML = $(this).attr('aria-label');
-        HandlePaintings(verity,types,color)
+        HandlePaintings(verity,types,color,creator)
         handleDarkMode();
     })
     $(".filter-button2").click(function(){
         types = $(this).attr('data-filter');
         document.getElementById("dropdownMenuButton2").innerHTML = $(this).attr('aria-label');
-        HandlePaintings(verity,types,color)
+        HandlePaintings(verity,types,color,creator)
         handleDarkMode();
     })
     $(".filter-button3").click(function(){
         color = $(this).attr('data-filter');
         document.getElementById("dropdownMenuButton3").innerHTML = $(this).attr('aria-label');
-        HandlePaintings(verity,types,color)
+        HandlePaintings(verity,types,color,creator)
+        handleDarkMode();
+    })
+    $(".filter-button4").click(function(){
+        creator = $(this).attr('data-filter');
+        document.getElementById("dropdownMenuButton4").innerHTML = $(this).attr('aria-label');
+        HandlePaintings(verity,types,color,creator)
         handleDarkMode();
     })
 }
 
-function HandlePaintings(a,b,c){
+function HandlePaintings(a,b,c,d){
     $('.loading-container2').show();
     $('#Paintings-Container').hide();
     const Paintings = Data.Paintings;
     const data = []
     for (let i = 0; i < Paintings.length; i++){
         const e = Paintings[i]
-        if ((e.filter.verity == a || a == 'all') && (e.filter.Type == b || b == 'all') && (e.filter.Color == c || c == 'all')){
+        if ((e.filter.verity == a || a == 'all') && (e.filter.Type == b || b == 'all') && (e.filter.Color == c || c == 'all') && (e.filter.artist == d || d == 'all')){
             const item = `
             <div class="col">
                 <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
@@ -328,6 +369,7 @@ function onRead(Image, Image_alt, Title, description, Verity, Types, Colors, Pri
     previousScrollPosition = window.scrollY;
     $('#Paintings-Container').hide();
     $('#Painting-Details').show();
+    $('.goback').show();
     window.scrollTo({
         top: 0,
         behavior: 'smooth' // Use 'auto' for instant scroll
@@ -336,6 +378,7 @@ function onRead(Image, Image_alt, Title, description, Verity, Types, Colors, Pri
 
 function GOBack(){
     $('#Painting-Details').hide();
+    $('.goback').hide();
     $('#Paintings-Container').show();
     window.scrollTo({
         top: previousScrollPosition,

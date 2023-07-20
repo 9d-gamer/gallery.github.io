@@ -47,7 +47,8 @@
                 "Type":"fabric",
                 "Type_label":"Fabric",
                 "Color":"oil-color",
-                "Color_label":"Oil"
+                "Color_label":"Oil",
+                "artist":"roger"
             },
             "detail":"Hello,<br>This is a multiline<br>JSON string.",
             "price":"$330-$450",
@@ -64,7 +65,8 @@
                 "Type":"ohp",
                 "Type_label":"OHP",
                 "Color":"oil-color",
-                "Color_label":"Oil"
+                "Color_label":"Oil",
+                "artist":"roger"
             },
             "detail":"Hello,<br>This is a multiline<br>JSON string.",
             "price":"$330-$450",
@@ -74,14 +76,15 @@
             "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
             "Image_alt":"Painting",
             "Title":"Abstract Painting",
-            "description":"Created by Roger Park",
+            "description":"Created by Tayyab Naseem",
             "filter":{
                 "verity":"abstract",
                 "verity_label":"Abstract",
                 "Type":"fabric",
                 "Type_label":"Fabric",
                 "Color":"water-color",
-                "Color_label":"Water"
+                "Color_label":"Water",
+                "artist":"tayyab"
             },
             "detail":"Hello,<br>This is a multiline<br>JSON string.",
             "price":"$330-$450",
@@ -91,14 +94,15 @@
             "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
             "Image_alt":"Painting",
             "Title":"Abstract Painting",
-            "description":"Created by Roger Park",
+            "description":"Created by Sujal Shah",
             "filter":{
                 "verity":"figurative",
                 "verity_label":"Figurative",
                 "Type":"fabric",
                 "Type_label":"Fabric",
                 "Color":"water-color",
-                "Color_label":"Water"
+                "Color_label":"Water",
+                "artist":"sujal"
             },
             "detail":"Hello,<br>This is a multiline<br>JSON string.",
             "price":"$330-$450",
@@ -243,6 +247,20 @@
                 "image_alt":"categories/paint19",
                 "aria_label": "Ink",
                 "label":"Ink Color"
+            }
+        ],
+        "artists":[
+            {
+                "id":"roger",
+                "aria_label": "Roger Park"
+            },
+            {
+                "id":"sujal",
+                "aria_label": "Sujal Shah"
+            },
+            {
+                "id":"tayyab",
+                "aria_label": "Tayyab Naseem"
             }
         ]
     }
