@@ -9,6 +9,7 @@ const ClassesLight_to_Dark = { // convert light to dark
     'border-light':'border-dark',
     'border-light2':'border-dark2',
     'shadow-light':'shadow-dark',
+    'shadow-light2':'shadow-dark2',
     "card-footer-light":"card-footer-dark",
     "btn-light":"btn-dark",
 };
@@ -24,6 +25,7 @@ const ClassesDark_to_Light = { // convert dark to light
     'border-dark':'border-light',
     'border-dark2':'border-light2',
     'shadow-dark':'shadow-light',
+    'shadow-dark2':'shadow-light2',
     "card-footer-dark":"card-footer-light",
     "btn-dark":"btn-light",
 };

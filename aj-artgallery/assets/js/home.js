@@ -228,7 +228,7 @@ function HandleFAQ(){
     faq.push(data);
   }
   const html = `
-  <div class="container card shadow-light p-3 bg-light">
+  <div class="container card p-3 bg-light">
       <div
         class="row row-cols-w row-cols-md-2 m-4 justify-content-center"
         id="cards"
