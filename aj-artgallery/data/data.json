@@ -252,15 +252,24 @@
         "artists":[
             {
                 "id":"roger",
-                "aria_label": "Roger Park"
+                "aria_label": "Roger Park",
+                "Image": "/assets/images/pages/home/categories/paint19.jpg",
+                "image_alt":"categories/paint19",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
             },
             {
                 "id":"sujal",
-                "aria_label": "Sujal Shah"
+                "aria_label": "Sujal Shah",
+                "Image": "Roger Park",
+                "image_alt":"categories/paint19",
+                "Description": "Roger Park"
             },
             {
                 "id":"tayyab",
-                "aria_label": "Tayyab Naseem"
+                "aria_label": "Tayyab Naseem",
+                "Image": "Roger Park",
+                "image_alt":"categories/paint19",
+                "Description": "Roger Park"
             }
         ]
     }
