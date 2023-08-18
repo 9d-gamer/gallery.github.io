@@ -274,7 +274,7 @@ function HandlePaintings(a,b,c,d){
     if (data.length >= 1) {
         const html = `
         <div class="container">
-            <p class="text-center fs-1">Paintings</p>
+            <p class="text-center fs-1 text-dark">Paintings</p>
             <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
                 ${data.join('')}
             </div>
@@ -403,7 +403,7 @@ function onRead(Image, Image_alt, Title, description, Verity, Types, Colors, Pri
                 </div>
                 <br><br>
                 <p class="fs-2">Detail:</p>
-                <p class="fs-4">${Detail}</p>
+                <p class="fs-5">${Detail}</p>
             </div>
         </div>
     </div>

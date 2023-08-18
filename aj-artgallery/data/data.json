@@ -38,75 +38,93 @@
     "Paintings": [
         {
             "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
-            "Image_alt":"Painting",
+            "Image_alt":"Abstract-canvas-acrylic-ink colour",
             "Title":"Abstract Painting",
             "description":"Created by Roger Park",
             "filter":{
                 "verity":"abstract",
                 "verity_label":"Abstract",
-                "Type":"fabric",
-                "Type_label":"Fabric",
-                "Color":"oil-color",
-                "Color_label":"Oil",
+                "Type":"canvas",
+                "Type_label":"Canvas",
+                "Color":"acrylc-color",
+                "Color_label":"Acrylic",
                 "artist":"roger"
             },
-            "detail":"Hello,<br>This is a multiline<br>JSON string.",
+            "detail":"This captivating abstract painting, born from the vibrant medium of acrylic colors on canvas, is a symphony of colors, shapes, and emotions that invites the viewer into a world of imagination and contemplation. The artist's mastery over acrylics is evident in the dynamic interplay of hues that dance across the canvas, creating a sense of movement and depth.<br><br>The painting defies traditional representation, opting instead for an exploration of form and texture. Bold brushstrokes intertwine with delicate splatters, revealing a harmonious chaos that stimulates the senses. The acrylic medium's quick-drying nature enables layering, resulting in a rich tapestry of textures and transparencies that shift as light plays upon the surface.<br><br>Abstracted elements seem to emerge and recede, sparking a unique journey of interpretation for each observer. The absence of a concrete subject matter encourages introspection, allowing emotions and memories to take shape in response to the artwork's visual cues.<br><br>Ultimately, this abstract acrylic masterpiece encapsulates the fluidity of creativity while engaging the viewer's perception in an ever-evolving dialogue between color, form, and the intangible realm of artistic expression.",
             "price":"$330-$450",
             "spotlight":true
         },
         {
-            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
-            "Image_alt":"Painting",
-            "Title":"Abstract Painting",
-            "description":"Created by Roger Park",
-            "filter":{
-                "verity":"abstract",
-                "verity_label":"Abstract",
-                "Type":"ohp",
-                "Type_label":"OHP",
-                "Color":"oil-color",
-                "Color_label":"Oil",
-                "artist":"roger"
-            },
-            "detail":"Hello,<br>This is a multiline<br>JSON string.",
-            "price":"$330-$450",
-            "spotlight":true
-        },
-        {
-            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
-            "Image_alt":"Painting",
-            "Title":"Abstract Painting",
-            "description":"Created by Tayyab Naseem",
-            "filter":{
-                "verity":"abstract",
-                "verity_label":"Abstract",
-                "Type":"fabric",
-                "Type_label":"Fabric",
-                "Color":"water-color",
-                "Color_label":"Water",
-                "artist":"tayyab"
-            },
-            "detail":"Hello,<br>This is a multiline<br>JSON string.",
-            "price":"$330-$450",
-            "spotlight":true
-        },
-        {
-            "image":"/assets/images/pages/paintings/Abstract-canvas-acrylic-ink colour.jpg",
-            "Image_alt":"Painting",
-            "Title":"Abstract Painting",
-            "description":"Created by Sujal Shah",
+            "image":"/assets/images/pages/paintings/figurative-paper-Charcoal.jpg",
+            "Image_alt":"figurative-paper-Charcoal",
+            "Title":"Figurative Painting",
+            "description":"Created by Noah Caine",
             "filter":{
                 "verity":"figurative",
                 "verity_label":"Figurative",
-                "Type":"fabric",
-                "Type_label":"Fabric",
-                "Color":"water-color",
-                "Color_label":"Water",
-                "artist":"sujal"
+                "Type":"paper",
+                "Type_label":"Paper",
+                "Color":"charcoal-color",
+                "Color_label":"Charcoal",
+                "artist":"noah_caine"
             },
-            "detail":"Hello,<br>This is a multiline<br>JSON string.",
+            "detail":"Figurative painting brought to life on paper through the evocative medium of charcoal colors captures the essence of raw emotion and human form. The monochromatic palette of charcoal lends depth and drama to the artwork, allowing the artist to explore nuances of light and shadow, thereby sculpting the figures on paper.<br><br>With each stroke of charcoal, the artist conjures a tactile sense of texture and a mesmerizing interplay between light and darkness. The tangible smudges and velvety blacks create an almost palpable connection between the viewer and the subjects depicted. The subtlety of details in the lines and strokes brings the figures to life, conveying their stories, moods, and gestures.<br><br>Charcoal's versatile nature allows for both bold, sweeping gestures and delicate, intricate detailing. This dynamic interplay enables the artist to infuse vitality into the artwork, making the figures appear almost tangible, their emotions palpable. The spontaneity of charcoal on paper captures fleeting moments, freezing them in time.<br><br>In this amalgamation of figurative art and charcoal medium, the paper becomes a stage where emotions dance and stories unfold. The artistry transcends the limits of the medium, making every piece a testament to the power of human expression and the enduring beauty of the visual narrative.",
             "price":"$330-$450",
             "spotlight":true
+        },
+        {
+            "image":"/assets/images/pages/paintings/flower-canvas-ink colour.jpg",
+            "Image_alt":"flower-canvas-ink colour",
+            "Title":"Flower Painting",
+            "description":"Created by Mike Arthur",
+            "filter":{
+                "verity":"flower",
+                "verity_label":"Flower",
+                "Type":"canvas",
+                "Type_label":"Canvas",
+                "Color":"oil-color",
+                "Color_label":"Oil",
+                "artist":"mike_arthur"
+            },
+            "detail":"The canvas comes alive with a mesmerizing flower painting created using vibrant ink colors. Each delicate petal and intricate detail are brought to life through the artist's skillful brushwork, capturing the essence of nature's beauty. The ink colors dance across the canvas, forming a symphony of hues that evoke a sense of enchantment.<br><br>The flowers seem to sway with a gentle breeze, their colors blending seamlessly, from the soft pastels of dawn to the rich and deep tones of dusk. The artist's mastery lies in the balance between precision and fluidity, as the ink creates both defined edges and a sense of movement. The contrast between the delicate blossoms and the textured background adds depth to the composition.<br><br>As the observer gazes upon the artwork, they are transported to a serene garden, where time slows down and the fragrance of the flowers fills the air. Each stroke of ink is a testament to the artist's creativity, capturing not only the visual beauty of the flowers but also their emotional resonance. This flower painting on canvas becomes a window into a world of tranquility, inviting contemplation and connection with nature's wonders.",
+            "price":"$330-$450",
+            "spotlight":true
+        },
+        {
+            "image":"/assets/images/pages/paintings/landscape- acrylic-oil painting.jpg",
+            "Image_alt":"landscape- acrylic-oil painting",
+            "Title":"Landscape Painting",
+            "description":"Created by Scott Living",
+            "filter":{
+                "verity":"landscape",
+                "verity_label":"Landscape",
+                "Type":"acrylic",
+                "Type_label":"Acrylic",
+                "Color":"oil-color",
+                "Color_label":"Oil",
+                "artist":"scott_living"
+            },
+            "detail":"Landscape painting is a captivating art form that finds expression through the masterful use of acrylic and oil colors. This unique combination of mediums allows artists to harness the best of both worlds, resulting in stunning visual narratives that come to life on canvas.<br><br>Acrylic's quick-drying and versatile nature enables artists to capture the vibrancy of a landscape swiftly, while oil colors offer a rich depth and texture that adds a tactile dimension to the work. The interplay between these two mediums introduces a dynamic contrast that enhances the painting's overall impact.<br><br>In a harmonious dance of pigments, the artist employs acrylics to lay down initial layers, capturing the essence of the landscape's bold strokes and vivid hues. Subsequently, oil colors are deftly applied, layer by layer, to build intricate details, subtle shadows, and luminous highlights. This technique imbues the artwork with a sense of depth, inviting the viewer to journey into the scene and connect with nature's beauty.<br><br>The acrylic and oil landscape painting transcends traditional boundaries, fusing innovation with tradition. It's a testament to the artist's skill and creativity, transforming a blank canvas into a portal that transports viewers into the heart of nature's splendor.",
+            "price":"$330-$450",
+            "spotlight":true
+        },
+        {
+            "image":"",
+            "Image_alt":"",
+            "Title":"",
+            "description":"Created by Roger Park",
+            "filter":{
+                "verity":"abstract",
+                "verity_label":"Abstract",
+                "Type":"canvas",
+                "Type_label":"Canvas",
+                "Color":"acrylc-color",
+                "Color_label":"Acrylic",
+                "artist":"roger"
+            },
+            "detail":"",
+            "price":"$330-$450",
+            "spotlight":false
         }
     ],
     "filters":{
@@ -119,7 +137,7 @@
                 "label":"Abstract Paintings"
             },
             {
-                "id":"abstract",
+                "id":"landscape",
                 "image":"/assets/images/pages/home/categories/paint2.jpg",
                 "image_alt":"categories/paint2",
                 "aria_label": "Landscape",
@@ -253,23 +271,30 @@
             {
                 "id":"roger",
                 "aria_label": "Roger Park",
-                "Image": "/assets/images/pages/home/categories/paint19.jpg",
-                "image_alt":"categories/paint19",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
                 "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
             },
             {
-                "id":"sujal",
-                "aria_label": "Sujal Shah",
-                "Image": "Roger Park",
-                "image_alt":"categories/paint19",
-                "Description": "Roger Park"
+                "id":"noah_caine",
+                "aria_label": "Noah Caine",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
             },
             {
-                "id":"tayyab",
-                "aria_label": "Tayyab Naseem",
-                "Image": "Roger Park",
-                "image_alt":"categories/paint19",
-                "Description": "Roger Park"
+                "id":"mike_arthur",
+                "aria_label": "Mike Arthur",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
+            },
+            {
+                "id":"scott_living",
+                "aria_label": "Scott Living",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
             }
         ]
     }
