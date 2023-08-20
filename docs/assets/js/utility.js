@@ -12,7 +12,7 @@ function containsOnlySubstring(str, substring) {
   return regex.test(str);
 }
 
-if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'https://9d-gamer.github.io/site/')) {
+if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'https://art-gallery.aj-developments.com/')) {
   if (!Devmode) {
     fetch("https://raw.githubusercontent.com/9d-gamer/site/main/docs/data/version.json")
       .then((response) => response.json())
