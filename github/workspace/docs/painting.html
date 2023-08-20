@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintings</title>
+    <link rel="icon" href='/assets/images/fav.ico'>
+    <link rel="shortcut icon" href='/assets/images/fav.ico'>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top card shadow-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="/assets/images/logos/art-48.png" class="img-fluid" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-link addHover-Navbar-light" onclick="redirect('/index.html')">Home</a>
+                    <a class="nav-link addHover-Navbar-light" onclick="redirect('/about.html')">About Us</a>
+                    <a class="nav-link active" aria-current="page">Paintings</a>
+                    <a class="nav-link addHover-Navbar-light" onclick="redirect('/contact Us.html')">Contact Us</a>
+                    <a class="nav-link addHover-Navbar-light goback" onclick="GOBack()">&lt;&lt;&lt; Go Back</a>
+                </div>
+                <form class="d-flex">
+                    <h5 class="DarkMode-hint me-2 mb-2 mb-lg-0 text-dark">
+                        Toggle Darkmode
+                    </h5>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="toggleSwitch" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <br><br><br>
+    <div class="loading-container">
+        <div class="loading-spinner">
+            <div class="spinner-left"></div>
+            <div class="spinner-right"></div>
+            <div class="spinner-center"></div>
+        </div>
+    </div>
+
+    <div class="PaintingPage">
+        <div id="Painting-Filters"></div>
+        <hr class="divider divider-dark" />
+        <div class="loading-container2">
+            <div class="loading-spinner">
+                <div class="spinner-left"></div>
+                <div class="spinner-right"></div>
+                <div class="spinner-center"></div>
+            </div>
+        </div>
+        <div id="Paintings-Container"></div>
+    </div>
+    <div id="Painting-Details"></div>
+    <hr class="divider divider-dark" />
+    <br><br><br>
+
+    <footer class="container footer mt-auto py-3 bg-light rounded shadow-light2 p-3">
+        <div class="container-fluid">
+            <div class="row row-cols-w row-cols-md-3 m-4 justify-content-center" id="cards">
+                <div class="col d-flex justify-content-center mt-5">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/assets/images/logos/art-250.png" class="img-fluid" alt="logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center pt-5 mt-3">
+                    <br />
+                    <p class="text-dark"><i class="fa fa-location-arrow text-dark"></i> 1234/56 sec 7 phase 8</p>
+                    <p class="text-dark"><i class="fa fa-phone text-dark"></i> +1 (123) 456-7890</p>
+                    <p class="text-dark"><i class="fa fa fa-envelope text-dark"></i> info@example.com</p>
+                </div>
+                <div class="col text-center pt-5 mt-2">
+                    <h3 class="text-dark">Follow us</h3>
+                    <a href="https://www.instagram.com" target="_blank" class="remove-anchor-decoration text-dark">
+                        <p class="text-dark"><i class="fab fa-instagram"></i> Instagram</p>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="remove-anchor-decoration text-dark">
+                        <p class="text-dark"><i class="fab fa-facebook"></i> Facebook</p>
+                    </a>
+                    <a href="https://twitter.com/?lang=en" target="_blank" class="remove-anchor-decoration text-dark">
+                        <p class="text-dark"><i class="fab fa-twitter"></i> Twitter</p>
+                    </a>
+                    <a href="https://www.snapchat.com" target="_blank" class="remove-anchor-decoration text-dark">
+                        <p class="text-dark"><i class="fab fa-snapchat"></i> snapchat</p>
+                    </a>
+                </div>
+            </div>
+            <p class="text-center text-dark">&copy; Copyright 2023 AJ-DEVELOPMENTS</p>
+        </div>
+    </footer>
+    
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/utility.js"></script>
+    <script src="assets/js/cookie-handler.js"></script>
+    <script src="assets/js/darkmode-handler.js"></script>
+    <script src="assets/js/painting.js"></script>
+</body>
+</html>
