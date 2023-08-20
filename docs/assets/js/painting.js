@@ -230,7 +230,7 @@ function HandlePaintings(a,b,c,d){
             const item = `
             <div class="col">
                 <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
-                    <img src="/site${e.image}" class="card-img-top image-fluid"
+                    <img src="${e.image}" class="card-img-top image-fluid"
                     alt="${e.Image_alt}" />
                     <hr class="divider divider-dark" />
                     <div class="card-body">
@@ -260,7 +260,7 @@ function HandlePaintings(a,b,c,d){
                         About Artist
                     </button>
                     <button type="button" class="mt-3 btn btn-light float-md-center text-dark"
-                        onclick="OnDownload('/site${e.image}', '${e.Title} // ${e.description}.jpg')">
+                        onclick="OnDownload('${e.image}', '${e.Title} // ${e.description}.jpg')">
                         Downlaod Image
                     </button>
                     <hr class="divider divider-dark" />
@@ -324,14 +324,14 @@ function onReadArtist(id,name,image,image_alt,description){
             </div>
             <div class="col">
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a href="/site/painting.html?param1=all&param2=all&param3=all&param4=${id}&label1=All&label2=All&label3=All&label4=${name}"><button class="btn btn-light">See all painting from this artist</button><a>
+                    <a href="/painting.html?param1=all&param2=all&param3=all&param4=${id}&label1=All&label2=All&label3=All&label4=${name}"><button class="btn btn-light">See all painting from this artist</button><a>
                     
                 </div>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 m-4">
             <div class="col">
-                <img src="/site${image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-dark" alt="${image_alt}" />
+                <img src="${image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-dark" alt="${image_alt}" />
             </div>
             <div class="col text-light">
                 <p class="fs-1 text-center ">${name}</p>
@@ -350,7 +350,7 @@ function onReadArtist(id,name,image,image_alt,description){
     <button class="btn btn-light" onclick="GOBack()">&lt;&lt;&lt; Go Back</button>
     <div class="row row-cols-1 row-cols-md-2 m-4">
         <div class="col">
-            <img src="/site${image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-light" alt="${image_alt}" />
+            <img src="${image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-light" alt="${image_alt}" />
         </div>
         <div class="col">
             <p class="fs-1 text-center">${name}</p>
@@ -381,7 +381,7 @@ function onRead(Image, Image_alt, Title, description, Verity, Types, Colors, Pri
         <button class="btn btn-light" onclick="GOBack()">&lt;&lt;&lt; Go Back</button>
         <div class="row row-cols-1 row-cols-md-2 m-4">
             <div class="col">
-                <img src="/site${Image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-dark" alt="${Image_alt}" />
+                <img src="${Image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-dark" alt="${Image_alt}" />
             </div>
             <div class="col text-light">
                 <p class="fs-1 text-center ">${Title}</p>
@@ -416,7 +416,7 @@ function onRead(Image, Image_alt, Title, description, Verity, Types, Colors, Pri
     <button class="btn btn-light" onclick="GOBack()">&lt;&lt;&lt; Go Back</button>
     <div class="row row-cols-1 row-cols-md-2 m-4">
         <div class="col">
-            <img src="/site${Image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-light" alt="${Image_alt}" />
+            <img src="${Image}" class="img-fluid rounded mx-auto mt-5 pt-5 pb-5 mt-5 d-block shadow-light" alt="${Image_alt}" />
         </div>
         <div class="col">
             <p class="fs-1 text-center">${Title}</p>
