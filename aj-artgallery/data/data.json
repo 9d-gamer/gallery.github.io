@@ -109,20 +109,92 @@
             "spotlight":true
         },
         {
-            "image":"",
-            "Image_alt":"",
-            "Title":"",
-            "description":"Created by Roger Park",
+            "image":"/assets/images/pages/paintings/flower-canvas-water colour.jpg",
+            "Image_alt":"flower-canvas-water colour",
+            "Title":"Flower Painting",
+            "description":"Created by Terry Jay",
             "filter":{
-                "verity":"abstract",
-                "verity_label":"Abstract",
+                "verity":"flower",
+                "verity_label":"Flower",
                 "Type":"canvas",
                 "Type_label":"Canvas",
-                "Color":"acrylc-color",
-                "Color_label":"Acrylic",
-                "artist":"roger"
+                "Color":"water-color",
+                "Color_label":"Water",
+                "artist":"terry_jay"
             },
-            "detail":"",
+            "detail":"The canvas comes alive with vibrant hues as delicate petals are meticulously brought to life through the graceful strokes of watercolors. The flower painting captures nature's ephemeral beauty, preserving a moment of serenity on a textured canvas. Soft washes of translucent pigments blend seamlessly, mimicking the gentle play of sunlight on the petals. The artist's skillful hand creates layers of depth, allowing each petal to unfurl with a mesmerizing realism.<br><br>Subtle variations in color and tone lend an organic quality to the composition, as the watercolors cascade and merge, mirroring the organic flow of life in a garden. The canvas seems to breathe with the freshness of dew-kissed petals, evoking a sensory experience that transcends the visual. The interplay between the ethereal medium and the sturdy canvas showcases a delicate balance between fragility and resilience—a testament to the flower's enduring allure.<br><br>This watercolor flower painting on canvas is a testament to the artist's ability to capture the delicate essence of nature and translate it into a tangible, timeless masterpiece that enchants the viewer with its delicate charm.",
+            "price":"$330-$450",
+            "spotlight":false
+        },
+        {
+            "image":"/assets/images/pages/paintings/religious-canvas-ink color_.jpg",
+            "Image_alt":"religious-canvas-ink color_",
+            "Title":"Religious Painting",
+            "description":"Created by Jeremy Vice",
+            "filter":{
+                "verity":"religious",
+                "verity_label":"Religious",
+                "Type":"canvas",
+                "Type_label":"Canvas",
+                "Color":"ink-color",
+                "Color_label":"Ink",
+                "artist":"jeremy_vice"
+            },
+            "detail":"A masterful religious painting on canvas emerges as a testament to the profound connection between art and spirituality. The intricate interplay of ink colors on the canvas creates a captivating portrayal of devotion and transcendence. The artist's meticulous brushstrokes infuse life into the divine figures, allowing their stories to unfold with remarkable depth and emotion.<br><br>The canvas becomes a portal to another realm, where vibrant hues of ink dance in harmony, conveying the divine narrative with a timeless resonance. The rich, velvety texture of the canvas interacts with the ink, creating an interplay of light and shadow that adds a dimension of realism to the ethereal subject matter.<br><br>The artist's choice of ink colors holds symbolic significance, as each hue carries its own metaphoric weight. Deep blues evoke a sense of calm and introspection, while warm golds embody the divine radiance. The canvas transforms into a sacred space where viewers can contemplate the mysteries of faith and existence, drawn into a dialogue between the visual and the spiritual.<br><br>In this religious painting, canvas and ink converge to encapsulate the essence of faith, inviting viewers to embark on a contemplative journey that transcends the physical world and delves into the realm of the divine.",
+            "price":"$330-$450",
+            "spotlight":false
+        },
+        {
+            "image":"/assets/images/pages/paintings/flower-paper-water colour.jpg",
+            "Image_alt":"flower-paper-water colour",
+            "Title":"Flower Painting",
+            "description":"Created by Timmy Tucker",
+            "filter":{
+                "verity":"flower",
+                "verity_label":"Flower",
+                "Type":"paper",
+                "Type_label":"Paper",
+                "Color":"water-color",
+                "Color_label":"Water",
+                "artist":"timmy_tucker"
+            },
+            "detail":"The delicate artistry of flower painting comes alive on paper through the vibrant medium of watercolors. With brush strokes that seem to echo the gentle sway of petals in the breeze, these paintings capture the ephemeral beauty of nature's most captivating blooms. The paper's texture absorbs the watercolors, lending an organic quality to the artwork. Layers of transparent pigments create a mesmerizing depth, as hues blend seamlessly to replicate the gradations of color found in actual flowers.<br><br>Artists who wield watercolors skillfully harness the fluidity of the medium to replicate the delicate veins on a rose petal or the subtle variations in a sunflower's golden crown. The paper itself becomes a canvas for emotion, as artists layer pigments to convey the mood of the blooms – from the ethereal tranquility of pastel tulips to the vibrant exuberance of wild poppies. The translucent quality of watercolors allows light to dance upon the surface, enhancing the artwork's luminosity.<br><br>In the end, a flower painting on paper using watercolors is a testament to the artist's ability to capture the fleeting beauty of flowers and preserve it in a timeless medium.",
+            "price":"$330-$450",
+            "spotlight":false
+        },
+        {
+            "image":"/assets/images/pages/paintings/religious-Fabric-oil color.jpg",
+            "Image_alt":"religious-Fabric-oil color",
+            "Title":"Religious Painting",
+            "description":"Created by Brent Kennedy",
+            "filter":{
+                "verity":"religious",
+                "verity_label":"Religious",
+                "Type":"fabric",
+                "Type_label":"Fabric",
+                "Color":"water-color",
+                "Color_label":"Water",
+                "artist":"brent_kennedy"
+            },
+            "detail":"The religious painting adorning the fabric canvas, brought to life with delicate watercolors, is a captivating embodiment of spiritual devotion and artistic finesse. The ethereal blend of translucent hues infuses the artwork with a sense of divine radiance. The intricate strokes and meticulous detailing breathe life into the sacred figures, transporting viewers to a realm of profound reverence.<br><br>The choice of watercolors on fabric allows for a unique play of textures, with the paint seeping into the fibers, creating a harmonious marriage between medium and material. The fabric's tactile quality adds an additional layer of intimacy, inviting observers to immerse themselves in the narrative.<br><br>Through skillful composition, the religious tableau unfolds, narrating tales of faith, sacrifice, and transcendence. The interplay of light and shadow, characteristic of watercolors, lends a dynamic quality to the scene, evoking an otherworldly aura. This creation isn't merely a painting; it's a spiritual journey captured on fabric, an expression of the artist's veneration, and an invitation for all to contemplate the profound mysteries of the divine.",
+            "price":"$330-$450",
+            "spotlight":false
+        },
+        {
+            "image":"/assets/images/pages/paintings/watercolor-paper-landscapes.jpg",
+            "Image_alt":"watercolor-paper-landscapes",
+            "Title":"Landscape Painting",
+            "description":"Created by Duane Winter",
+            "filter":{
+                "verity":"landscape",
+                "verity_label":"Landscape",
+                "Type":"paper",
+                "Type_label":"Paper",
+                "Color":"water-color",
+                "Color_label":"Water",
+                "artist":"duane_winter"
+            },
+            "detail":"Landscape painting, a timeless art form, finds exquisite expression when rendered on paper using the delicate medium of watercolors. The interplay between the fluid pigments and the absorbent paper creates a unique charm, capturing nature's beauty with unmatched grace.<br><br>Watercolors lend themselves beautifully to portraying landscapes, as their transparent quality allows for seamless blending of hues, mirroring the subtle shifts of light and shadow in the natural world. Artists harness the paper's texture to add depth, creating intricate layers that bring the scenery to life. The soft washes evoke the gentle touch of a breeze through the trees or the glistening reflection of a tranquil lake.<br><br>The choice of paper is vital; it dictates the level of detail and the overall mood of the painting. Thick, textured paper enhances the tactile appeal of the artwork, while smoother surfaces allow for intricate brushwork. This medium demands both precision and spontaneity, as watercolors require a deft touch to harness their unpredictable nature.<br><br>In the end, a landscape painted on paper using watercolors is a poetic interpretation of nature's grandeur. It encapsulates the artist's perception of the world, inviting viewers to immerse themselves in the serene and vibrant realms that unfold within the frame.",
             "price":"$330-$450",
             "spotlight":false
         }
@@ -292,6 +364,41 @@
             {
                 "id":"scott_living",
                 "aria_label": "Scott Living",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
+            },
+            {
+                "id":"terry_jay",
+                "aria_label": "Terry Jay",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
+            },
+            {
+                "id":"jeremy_vice",
+                "aria_label": "Jeremy Vice",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
+            },
+            {
+                "id":"timmy_tucker",
+                "aria_label": "Timmy Tucker",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
+            },
+            {
+                "id":"brent_kennedy",
+                "aria_label": "Brent Kennedy",
+                "Image": "/assets/images/about/no-pic.jpg",
+                "image_alt":"no-pic",
+                "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
+            },
+            {
+                "id":"duane_winter",
+                "aria_label": "Duane Winter",
                 "Image": "/assets/images/about/no-pic.jpg",
                 "image_alt":"no-pic",
                 "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas debitis exercitationem excepturi, veritatis tempora facere et cupiditate, velit iure facilis inventore porro, deserunt ut doloremque accusamus similique magnam. Beatae nostrum veniam adipisci reprehenderit quaerat nisi laudantium saepe voluptatem similique sed voluptatibus, praesentium odit quos doloribus facere inventore temporibus pariatur aut vero iure ipsa libero quas eius. In consequuntur fuga a possimus, exercitationem dolorem esse hic deleniti veritatis magnam, vel vero deserunt beatae unde sequi aliquam assumenda quos. At voluptates non repellendus blanditiis consequatur suscipit et iure assumenda. Voluptatibus delectus hic voluptas voluptatum? Sed labore, unde suscipit mollitia possimus odio!"
