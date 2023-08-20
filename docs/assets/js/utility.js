@@ -12,9 +12,9 @@ function containsOnlySubstring(str, substring) {
   return regex.test(str);
 }
 
-if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'http://127.0.0.1:5500/')) {
+if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'https://9d-gamer.github.io/')) {
   if (!Devmode) {
-    fetch("data/version.json")
+    fetch("site/data/version.json")
       .then((response) => response.json())
       .then((res) => {
         const cachedData = localStorage.getItem(res.version);
@@ -43,7 +43,7 @@ function DeleteOldCache(data) {
 
 function fetchDataAndCache(res) {
   if (res) {
-    fetch("data/data.json")
+    fetch("site/data/data.json")
       .then((response) => response.json())
       .then((data) => {
         Data = data;
@@ -54,7 +54,7 @@ function fetchDataAndCache(res) {
         console.error("Error:", error);
       });
   } else {
-    fetch("data/data.json")
+    fetch("site/data/data.json")
       .then((response) => response.json())
       .then((data) => {
         Data = data;

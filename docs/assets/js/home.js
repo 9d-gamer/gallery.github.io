@@ -21,7 +21,7 @@ function HandleSliders() {
     sliderButtons.push(button);
 
     const slider = `<div class="carousel-item ${i === 0 ? 'active' : ''}">
-                      <img src="${e.Image}" class="d-block w-100" alt="${e.Image_alt}" />
+                      <img src="/site${e.Image}" class="d-block w-100" alt="${e.Image_alt}" />
                       <div class="carousel-caption d-none d-md-block">
                           <h5>${e.Title}</h5>
                           <p>${e.Description}</p>
@@ -56,7 +56,7 @@ function HandleSpotLight(){
       const card = `<div class="col">
       <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
         <img
-          src="${e.image}"
+          src="/site${e.image}"
           class="card-img-top image-fluid"
           alt="${e.Image_alt}"
         />
@@ -75,7 +75,7 @@ function HandleSpotLight(){
   const html = `
   <div class="container">
     <p class="text-center fs-1 text-dark">Weekly Spotlight</p>
-    <a href="/painting.html" class="remove-anchor-decoration">
+    <a href="/site/painting.html" class="remove-anchor-decoration">
       <p class="text-end fs-5 text-primary">See More Arts>>></p>
     </a>
     <div class="row row-cols-1 row-cols-md-4 m-4" id="cards">
@@ -95,13 +95,13 @@ function HandleFilters(){
   for (i=0; i < verity.length; i++) {
     const e = verity[i];
     const card = `<a
-                    href="/painting.html?param1=${e.id}&param2=all&param3=all&label1=${e.aria_label}&label2=All&label3=All"
+                    href="/site/painting.html?param1=${e.id}&param2=all&param3=all&label1=${e.aria_label}&label2=All&label3=All"
                     class="remove-anchor-decoration text-dark"
                   >
                     <div class="col">
                       <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
                         <img
-                          src="${e.image}"
+                          src="/site${e.image}"
                           class="card-img-top image-fluid"
                           alt="${e.image_alt}"
                         />
@@ -116,13 +116,13 @@ function HandleFilters(){
   for (i=0; i < types.length; i++) {
     const e = types[i];
     const card = `<a
-                    href="/painting.html?param1=all&param2=${e.id}&param3=all&label1=All&label2=${e.aria_label}&label3=All"
+                    href="/site/painting.html?param1=all&param2=${e.id}&param3=all&label1=All&label2=${e.aria_label}&label3=All"
                     class="remove-anchor-decoration text-dark"
                   >
                     <div class="col">
                       <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
                         <img
-                          src="${e.image}"
+                          src="/site${e.image}"
                           class="card-img-top image-fluid"
                           alt="${e.image_alt}"
                         />
@@ -137,13 +137,13 @@ function HandleFilters(){
   for (i=0; i < color.length; i++) {
     const e = color[i];
     const card = `<a
-                    href="/painting.html?param1=all&param2=all&param3=${e.id}&label1=All&label2=All&label3=${e.aria_label}"
+                    href="/site/painting.html?param1=all&param2=all&param3=${e.id}&label1=All&label2=All&label3=${e.aria_label}"
                     class="remove-anchor-decoration text-dark"
                   >
                     <div class="col">
                       <div class="card addHover-light p-3 mb-5 bg-light rounded border border-dark2">
                         <img
-                          src="${e.image}"
+                          src="/site${e.image}"
                           class="card-img-top image-fluid"
                           alt="${e.image_alt}"
                         />
@@ -160,7 +160,7 @@ function HandleFilters(){
       <p class="text-center fs-1 card shadow-light p-3 text-dark bg-light">
         We have these verities in paintings
       </p>
-      <a href="/painting.html" class="remove-anchor-decoration">
+      <a href="/site/painting.html" class="remove-anchor-decoration">
         <p class="text-end fs-5 text-primary">See More Paintings>>></p>
       </a>
       <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
@@ -172,7 +172,7 @@ function HandleFilters(){
       <p class="text-center fs-1 card shadow-light p-3 text-dark bg-light">
         We have these types in paintings
       </p>
-      <a href="/painting.html" class="remove-anchor-decoration">
+      <a href="/site/painting.html" class="remove-anchor-decoration">
         <p class="text-end fs-5 text-primary">See More Paintings>>></p>
       </a>
       <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
@@ -184,7 +184,7 @@ function HandleFilters(){
       <p class="text-center fs-1 card shadow-light p-3 text-dark bg-light">
         We have these colors in paintings
       </p>
-      <a href="/painting.html" class="remove-anchor-decoration">
+      <a href="/site/painting.html" class="remove-anchor-decoration">
         <p class="text-end fs-5 text-primary">See More Paintings>>></p>
       </a>
       <div class="row row-cols-1 row-cols-md-3 m-4" id="cards">
