@@ -14,7 +14,7 @@ function containsOnlySubstring(str, substring) {
 
 if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'https://art-gallery.aj-developments.com/')) {
   if (!Devmode) {
-    fetch("/data/version.json")
+    fetch("https://raw.githubusercontent.com/9d-gamer/site/main/docs/data/version.json")
       .then((response) => response.json())
       .then((res) => {
         const cachedData = localStorage.getItem(res.version);
@@ -43,7 +43,7 @@ function DeleteOldCache(data) {
 
 function fetchDataAndCache(res) {
   if (res) {
-    fetch("/data/data.json")
+    fetch("https://raw.githubusercontent.com/9d-gamer/site/main/docs/data/data.json")
       .then((response) => response.json())
       .then((data) => {
         Data = data;
@@ -54,7 +54,7 @@ function fetchDataAndCache(res) {
         console.error("Error:", error);
       });
   } else {
-    fetch("/data/data.json")
+    fetch("https://raw.githubusercontent.com/9d-gamer/site/main/docs/data/data.json")
       .then((response) => response.json())
       .then((data) => {
         Data = data;
