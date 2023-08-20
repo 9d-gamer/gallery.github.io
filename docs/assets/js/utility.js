@@ -1,6 +1,6 @@
 var Data = {};
 const locationURL = window.location.href
-var Devmode = true
+var Devmode = false
 
 function containsOnlySubstring(str, substring) {
   // Escape special characters in the substring to avoid issues in the regular expression
@@ -12,7 +12,7 @@ function containsOnlySubstring(str, substring) {
   return regex.test(str);
 }
 
-if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'https://9d-gamer.github.io/')) {
+if (locationURL.includes('index.html') || locationURL.includes('painting.html') || containsOnlySubstring(locationURL,'https://9d-gamer.github.io/site/')) {
   if (!Devmode) {
     fetch("https://raw.githubusercontent.com/9d-gamer/site/main/docs/data/version.json")
       .then((response) => response.json())
