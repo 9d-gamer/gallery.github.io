@@ -100,7 +100,7 @@ function HandleFilters(a,b,c,d){
 
     const html =`
     <div class="container card shadow-light p-3 bg-light">
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-4">
       <div class="col">
         <div class="row">
           <div class="col">
