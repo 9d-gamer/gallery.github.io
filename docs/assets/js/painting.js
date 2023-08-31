@@ -3,6 +3,7 @@ let types = 'all'
 let color = 'all'
 let creator = 'all'
 let previousScrollPosition = 0;
+let Search = ''
 
 function HandlePage(){
     $('.goback').hide();
@@ -25,7 +26,9 @@ function HandlePage(){
     const creator_label = parameter8? parameter8 : 'All'
     HandleFilters(verity_label, types_label, color_label,creator_label);
     HandleFiltersButtons()
-    HandlePaintings(verity,types,color,creator)
+    HandleSearch()
+    HandleSearchButton()
+    HandlePaintings(verity,types,color,creator,Search)
     handleDarkMode();
     setTimeout(() => {
         $('.loading-container').hide();
@@ -207,6 +210,38 @@ function HandleFiltersButtons(){
     })
 }
 
+function HandleSearch(){
+    const html = `
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col">
+                <br>
+            </div>
+            <div class="col">
+                <br>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <div class="input-group mb-3 shadow-light">
+                    <input type="text" class="form-control" id="search-painting" placeholder="Search Painting" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" id="search-Button" type="button" id="button-addon2">Search</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+    const seachContainer = document.getElementById('Painting-Search');
+    seachContainer.innerHTML = html;
+}
+
+function HandleSearchButton(){
+    $("#search-Button").click(function(){
+        Search = document.getElementById("search-painting").value
+        HandlePaintings(verity,types,color,creator,Search)
+        handleDarkMode();
+    })
+}
+
+
 function GetArtistDetails(artist){
     const artists = Data.filters.artists;
     for (let i = 0; i < artists.length; i++){
@@ -217,14 +252,14 @@ function GetArtistDetails(artist){
     }
 }
 
-function HandlePaintings(a,b,c,d){
+function HandlePaintings(a,b,c,d,search){
     $('.loading-container2').show();
     $('#Paintings-Container').hide();
     const Paintings = Data.Paintings;
     const data = []
     for (let i = 0; i < Paintings.length; i++){
         const e = Paintings[i]
-        if ((e.filter.verity == a || a == 'all') && (e.filter.Type == b || b == 'all') && (e.filter.Color == c || c == 'all') && (e.filter.artist == d || d == 'all')){
+        if ((e.filter.verity == a || a == 'all') && (e.filter.Type == b || b == 'all') && (e.filter.Color == c || c == 'all') && (e.filter.artist == d || d == 'all') && (search == '' || e.Title.toLowerCase().includes(search.toLowerCase()) || e.description.toLowerCase().includes(search.toLowerCase()))){
             const artest = GetArtistDetails(e.filter.artist)
             console.log(e.artist)
             const item = `
