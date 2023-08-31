@@ -507,3 +507,6 @@ function OnDownload(path, name) {
     link.setAttribute("download", name);
     link.click();
 }
+
+Data = storage
+HandlePage()

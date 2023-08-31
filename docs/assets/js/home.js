@@ -247,3 +247,6 @@ function HandleFAQ(){
   const faqContainer = document.getElementById('Home-Questions');
   faqContainer.innerHTML = html;
 }
+
+Data = storage
+HandlePage()
