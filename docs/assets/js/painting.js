@@ -257,6 +257,9 @@ function HandlePaintings(a,b,c,d,search){
     $('#Paintings-Container').hide();
     const Paintings = Data.Paintings;
     const data = []
+    if (!search){
+        search = ''
+    }
     for (let i = 0; i < Paintings.length; i++){
         const e = Paintings[i]
         if ((e.filter.verity == a || a == 'all') && (e.filter.Type == b || b == 'all') && (e.filter.Color == c || c == 'all') && (e.filter.artist == d || d == 'all') && (search == '' || e.Title.toLowerCase().includes(search.toLowerCase()) || e.description.toLowerCase().includes(search.toLowerCase()))){
